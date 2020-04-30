@@ -64,42 +64,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-13236571737@163.com/F86B4650DB3C4DBBA13B4366C44BA893/static" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/04/30/13236571737@163.com/F86B4650DB3C4DBBA13B4366C44BA893/static/" class="article-date">
-  <time datetime="2020-04-30T04:43:04.183Z" itemprop="datePublished">2020-04-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/30/13236571737@163.com/F86B4650DB3C4DBBA13B4366C44BA893/static/">13236571737@163.com/F86B4650DB3C4DBBA13B4366C44BA893/static</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/30/13236571737@163.com/F86B4650DB3C4DBBA13B4366C44BA893/static/" data-id="ck9mpb3ct000228n1djo9a70x" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-const" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/04/30/const/" class="article-date">
@@ -140,72 +104,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/30/const/" data-id="ck9mpb37c000028n1ac8egm0f" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-13236571737@163.com/D4212CE4B47F4EEE8460A498FA34FED7/const" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/04/28/13236571737@163.com/D4212CE4B47F4EEE8460A498FA34FED7/const/" class="article-date">
-  <time datetime="2020-04-28T04:57:43.880Z" itemprop="datePublished">2020-04-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/28/13236571737@163.com/D4212CE4B47F4EEE8460A498FA34FED7/const/">13236571737@163.com/D4212CE4B47F4EEE8460A498FA34FED7/const</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="const"><a href="#const" class="headerlink" title="const"></a>const</h2><h4 id="1、const-修饰变量，表示该变量值不可修改-并且该变量需要初始化"><a href="#1、const-修饰变量，表示该变量值不可修改-并且该变量需要初始化" class="headerlink" title="1、const 修饰变量，表示该变量值不可修改,并且该变量需要初始化"></a>1、const 修饰变量，表示该变量值不可修改,并且该变量需要初始化</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const int value &#x3D; 1;</span><br><span class="line">value &#x3D; 2;                  &#x2F;&#x2F;错误，不可修改</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const int value;            &#x2F;&#x2F;错误，要求定义并初始化</span><br><span class="line">value &#x3D; 1;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2、const-修饰指针"><a href="#2、const-修饰指针" class="headerlink" title="2、const 修饰指针"></a>2、const 修饰指针</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int value &#x3D; 1;</span><br><span class="line">const int* p &#x3D; &amp;value;      &#x2F;&#x2F;指针变量，指向整型常量</span><br><span class="line">++p;                        &#x2F;&#x2F;正确，指针p可修改</span><br><span class="line">value &#x3D; 2;                  &#x2F;&#x2F;错误，变量value不可修改</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int value &#x3D; 1;</span><br><span class="line">int* const p &#x3D; &amp;value;      &#x2F;&#x2F;指针常量，指向整型变量</span><br><span class="line">++p;                        &#x2F;&#x2F;错误，指针p不可修改</span><br><span class="line">value &#x3D; 2;                  &#x2F;&#x2F;正确，变量value可修改</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int value &#x3D; 1;</span><br><span class="line">const int* const p &#x3D; &amp;value;&#x2F;&#x2F;指针常量，指向整型常量</span><br><span class="line">++p;                        &#x2F;&#x2F;错误，指针p不可修改</span><br><span class="line">value &#x3D; 2;                  &#x2F;&#x2F;错误，变量value不可修改</span><br></pre></td></tr></table></figure>
-
-<h4 id="3、const-修饰函数"><a href="#3、const-修饰函数" class="headerlink" title="3、const 修饰函数"></a>3、const 修饰函数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const int fun(int a)        &#x2F;&#x2F;返回一个常数</span><br><span class="line">&#123;</span><br><span class="line">    return ++a;</span><br><span class="line">&#125;</span><br><span class="line">int a &#x3D; 1;</span><br><span class="line">int b &#x3D; ++fun(a);           &#x2F;&#x2F;错误</span><br><span class="line">int c &#x3D; fun(a);             &#x2F;&#x2F;正确</span><br><span class="line">c++;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int fun(const int a)        &#x2F;&#x2F;形参为常量</span><br><span class="line">&#123;</span><br><span class="line">    a++;                    &#x2F;&#x2F;错误，a为只读变量，不可更改</span><br><span class="line">    return a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="4、const-修饰类中数据成员和成员函数"><a href="#4、const-修饰类中数据成员和成员函数" class="headerlink" title="4、const 修饰类中数据成员和成员函数"></a>4、const 修饰类中数据成员和成员函数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class A</span><br><span class="line">&#123;</span><br><span class="line">private:</span><br><span class="line">    int a; </span><br><span class="line">    const int b;				&#x2F;&#x2F;常对象成员，只能在初始化列表中赋值(直接初始化会被初始化列表中的值覆盖) </span><br><span class="line">    static int c;</span><br><span class="line"></span><br><span class="line">public:</span><br><span class="line">    &#x2F;&#x2F;构造函数</span><br><span class="line">    A(): b(0)&#123;&#125;;</span><br><span class="line">    A(int x): b(x)&#123;&#125;; 			&#x2F;&#x2F;初始化列表</span><br><span class="line">	</span><br><span class="line">    &#x2F;&#x2F;const函数</span><br><span class="line">    int getB() const; 		        &#x2F;&#x2F;常成员函数，不可修改类中任何数据成员的值 </span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">int A::c &#x3D; 2;</span><br><span class="line"></span><br><span class="line">int A::getB() const</span><br><span class="line">&#123;</span><br><span class="line">    this-&gt;a++;                          &#x2F;&#x2F;错误，在A::getValue中为this-&gt;a为只读变量</span><br><span class="line">    this-&gt;c++;                          &#x2F;&#x2F;正确，c为静态数据成员</span><br><span class="line">    return ++this-&gt;b;                   &#x2F;&#x2F;错误，b为只读变量</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">class A</span><br><span class="line">&#123;</span><br><span class="line">private:</span><br><span class="line">	int a; </span><br><span class="line">	const int b;</span><br><span class="line">	staic int c;</span><br><span class="line"></span><br><span class="line">public:</span><br><span class="line">	&#x2F;&#x2F;构造函数</span><br><span class="line">	A(): b(0)&#123;&#125;;</span><br><span class="line">	A(int x): b(x)&#123;&#125;; 			&#x2F;&#x2F;初始化列表</span><br><span class="line">	</span><br><span class="line">	int getA(); 		</span><br><span class="line">	int getB() const; 		&#x2F;&#x2F;常成员函数，不可修改类中任何数据成员的值 </span><br><span class="line">	 </span><br><span class="line">&#125;;</span><br><span class="line">int A::getA()</span><br><span class="line">&#123;</span><br><span class="line">	return this-&gt;a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int A::getB() const</span><br><span class="line">&#123;</span><br><span class="line">    this-&gt;c++;</span><br><span class="line">	return this-&gt;b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const int ab;                   &#x2F;&#x2F;const类型的对象，不能调用自身的非const成员函数，只能调用自己的const成员函数</span><br><span class="line">ab.getA();                      &#x2F;&#x2F;错误</span><br><span class="line">ab.getB();                      &#x2F;&#x2F;正确</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/28/13236571737@163.com/D4212CE4B47F4EEE8460A498FA34FED7/const/" data-id="ck9mpb3d7000328n1ayu098h6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/04/30/const/" data-id="ck9mpmmli000064n10v3xfzyq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -242,7 +141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/28/myblog/" data-id="ck9mpb3at000128n1a9a24lbl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/04/28/myblog/" data-id="ck9mpmmls000164n12fr5afvv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -283,15 +182,7 @@
       <ul>
         
           <li>
-            <a href="/2020/04/30/13236571737@163.com/F86B4650DB3C4DBBA13B4366C44BA893/static/">13236571737@163.com/F86B4650DB3C4DBBA13B4366C44BA893/static</a>
-          </li>
-        
-          <li>
             <a href="/2020/04/30/const/">const</a>
-          </li>
-        
-          <li>
-            <a href="/2020/04/28/13236571737@163.com/D4212CE4B47F4EEE8460A498FA34FED7/const/">13236571737@163.com/D4212CE4B47F4EEE8460A498FA34FED7/const</a>
           </li>
         
           <li>
